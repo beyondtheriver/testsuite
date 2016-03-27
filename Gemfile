@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development do
+group :development, :test do
  # Access an IRB console on exception pages or by using <%= console %> in views
  gem 'web-console', '~> 2.0'
  gem 'sqlite3'
@@ -46,6 +46,9 @@ group :development do
 
  gem 'rspec-rails'
  gem 'factory_girl_rails'
+
+ gem 'better_errors'
+ gem 'binding_of_caller'
 end
 
 group :production do
