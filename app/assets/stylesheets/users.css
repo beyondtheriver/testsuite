@@ -1,0 +1,27 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+#profileinfo {
+   color: white;
+   background-color: purple;
+   opacity: .8;
+   width: 150px;
+   border-radius: 10px;
+   padding: 8px;
+}
+#postbutton {
+   background-color: gold;
+   opacity: .8;
+   width: 150px;
+   border-radius: 10px;
+   padding: 8px;
+}
+#logdelbutton {
+  text-align: center;
+  background-color: gray;
+  width: 150px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 8px;
+}

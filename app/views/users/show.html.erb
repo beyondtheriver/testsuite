@@ -1,0 +1,38 @@
+<h2>Welcome <%= current_user.username.upcase %>...</h2>
+<h3>Profile</h3>
+<div id="profileinfo">
+   Email: <%= @user.email %>
+   <br>
+   First Name: <%= @user.fname %>
+   <br>
+   Last Name <%= @user.lname %>
+   <br>
+</div>
+ <!-- @user.dashboard.bio  -->
+<br>
+<div id="postbutton" style="cursor: pointer;" onclick="window.location='/posts/new';">
+      Post New
+  </div>
+<br>
+<% @posts.each do |post| %>
+     <%= content_tag :div, class: 'post_box' do -%>
+     <%= link_to post.user.username, user_path(post.user.id) %>
+     <br>
+     <%= post.message %>
+     <%= tag :br %>
+     <%= time_ago_in_words post.created_at %>
+     <%= tag :br %>
+      <%= link_to 'Comment', post_path(post.id)%>
+     <% end -%>
+   <% end %>
+<br>
+<br>
+<br>
+<% if @current_user.id = @user.id %>
+  <div id="logdelbutton">
+  <%= link_to("Sign Out", '/logout', method: :delete) %>
+</div>
+  <div id="logdelbutton">
+  <%= link_to("Delete Account", user_path(@user.id),method: :delete) %>
+</div>
+<% end %>

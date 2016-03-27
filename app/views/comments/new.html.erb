@@ -1,0 +1,14 @@
+<%= content_tag :div, class: 'comment_form' do -%>
+<%= content_tag :div, class: 'comment_box' do -%>
+<%= form_for @comment do |f| %>
+<%= f.label :comment %>
+<%= f.text_area :comment, :class => 'new_comment_comment', :placeholder => "Comment" %>
+<br>
+<%= Time.now.strftime("%H:%M:%S") %>
+<br>
+
+<br>
+<%=f.submit :create, :class => 'new_comment_button', :value => "New Comment" %>
+<% end %>
+<% end -%>
+<% end -%>

@@ -1,0 +1,14 @@
+Logged in as: <%= content_tag :h3, current_user.username.upcase %>
+<H2 id="allposts">All Posts</H2>
+<div class = "dashboard_feed">
+  <% @posts.each do |post| %>
+     <%= content_tag :div, class: 'post_box' do -%>
+     <%= link_to post.user.username, user_path(post.user.id) %>
+     <%= tag :br %>
+     <%= post.message %>
+     <%= tag :br %>
+     <%= time_ago_in_words post.created_at %>
+     <%= tag :br %>
+     <%= link_to 'Comment', post_path(post.id)%>
+     <% end -%>
+   <% end %>

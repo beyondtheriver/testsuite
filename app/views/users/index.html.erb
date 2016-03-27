@@ -1,0 +1,12 @@
+<H1>Current User: <%= content_tag :h1, current_user.username.upcase %>
+<h1>User ID# <%= @user.id %> </h1>
+<br>
+<% @users.each do |user| %>
+<div id="all_users">
+   <%= link_to user.username, user_path(user.id) %>
+   <br>
+   <%end%>
+</div>
+
+
+

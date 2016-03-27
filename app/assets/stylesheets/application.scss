@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+header {
+   font-size: 4em;
+   text-align: center;
+}
+#allposts {
+   color: white;
+   width: 100px;
+   margin: auto;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+.post_box {
+   font-size: 1.3em;
+   width: 30%;
+   margin: auto;
+   background-color: #ffffff;
+   opacity: .5;
+   margin-bottom: 14px;
+   padding-left: 8px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius:10px;
+
+}
+.post_box:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+nav {
+   display: flex;
+   width: 100%;
+   height: 50px;
+   background-color: rgba(0,0,0,.6);
+     ul {
+       display: flex;
+       list-style-type: none;
+       margin: auto;
+       padding: 0;
+     } li {
+        display: inline;
+        float: left;
+       } li a.button {
+            display: block;
+            padding: 8px 40px 8px 40px;
+          }
+}
+a.button {
+   text-decoration: none;
+   color: #ece8e4;
+   padding: 5px;
+   border: 1px solid rgba(0,0,0,0.8);
+   margin: 5px;
+   border-radius:10px;
+}
+
+a:hover {
+   background-color: purple;
+}
+textarea#post_message {
+   width: 400px;
+   height: 100px;
+   opacity: .7;
+   font-size: 1.3em;
+   border:2px solid #456879;
+   border-radius:10px;
+   box-shadow: 0 0 5px #333;
+}

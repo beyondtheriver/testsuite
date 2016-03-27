@@ -1,0 +1,114 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/*.new_comment_title {
+  font-size: 25px;
+  border-top-left-radius: 25px;
+  border: 1px grey solid;
+  text-align: center;
+  padding: 3px;
+}*/
+
+.new_comment_comment {
+  font-size: 22px;
+  border: 1px black solid;
+  text-align: center;
+  padding: 4px;
+  height: 100px;
+  word-wrap: normal;
+}
+
+.comment_box {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.new_comment_button {
+  width: 11vw;
+  background-color: gray;
+  color: red;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 2px;
+}
+
+/*.comment_title {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  word-wrap: normal;
+}*/
+
+.comment_form {
+  padding-top: 15px;
+  border: 2px solid black;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-left: 50%;
+  padding-bottom: 25px;
+  background-color: white;
+  clear: both;
+  word-wrap: normal;
+}
+
+.post_to_comment {
+  font-size: 2em;
+  font-family: Helvetica;
+  margin-top: 3%;
+  margin-left: 3%;
+  border: 1px solid black;
+  width: 350px;
+  background-color: green;
+  padding: 10px;
+  position: absolute;
+  overflow: scroll;
+  height: 100px;
+}
+
+/*.small_comment_title {
+  text-decoration: underline;
+}*/
+
+/*.post_to_comment_title {
+  border-bottom: grey solid 1px;
+  margin-bottom: 2px;
+}
+*/
+.username_comment {
+  font-style: italic;
+  border-bottom: 1px black solid;
+}
+
+.others_comments {
+  font-size: 20px;
+  font-family: Helvetica;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 10%;
+  border: 1px solid black;
+  width: 350px;
+  background-color: white;
+  padding: 10px;
+  overflow: scroll;
+  height: 200px;
+}
+
+.post_to_comment_message {
+  font-size: 15px;
+}
+
+.o_comment_body {
+  font-size: 15px;
+}
+
+
+
+
+
+

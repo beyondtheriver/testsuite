@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OuroBoros</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+</head>
+<body>
+   <header>
+      OuroBoros
+   </header>
+   <% if @current_user != nil %>
+   <nav>
+     <ul>
+        <li><a href="/posts" class="button">Posts</a></li>
+        <li><a href="/users/#{current_id}" class="button">Your Profile</a></li>
+        <li><a href="/users" class="button">Users</a></li>
+        <li><a href="/posts/new" class="button">Make a Post</a></li>
+     </ul>
+  </nav>
+  <% end %>
+
+   <div class = "flash">
+    <%= flash[:notice] if flash[:notice] %>
+   </div>
+
+<%= yield %>
+
+</body>
+</html>
